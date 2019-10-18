@@ -81,19 +81,56 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/01moduleMethods/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./index.js":
-/*!******************!*\
-  !*** ./index.js ***!
-  \******************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./src/01moduleMethods/index.js":
+/*!**************************************!*\
+  !*** ./src/01moduleMethods/index.js ***!
+  \**************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log('hello world');\n\n//# sourceURL=webpack:///./index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_es6_es6modules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/es6/es6modules */ \"./src/01moduleMethods/src/es6/es6modules.js\");\n\r\n\r\nconsole.log(_src_es6_es6modules__WEBPACK_IMPORTED_MODULE_0__[\"sub1\"], _src_es6_es6modules__WEBPACK_IMPORTED_MODULE_0__[\"sub2\"]);\n\n//# sourceURL=webpack:///./src/01moduleMethods/index.js?");
+
+/***/ }),
+
+/***/ "./src/01moduleMethods/src/es6/es6modules.js":
+/*!***************************************************!*\
+  !*** ./src/01moduleMethods/src/es6/es6modules.js ***!
+  \***************************************************/
+/*! exports provided: sub1, sub2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sub_sub1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sub/sub1 */ \"./src/01moduleMethods/src/es6/sub/sub1.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"sub1\", function() { return _sub_sub1__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n/* harmony import */ var _sub_sub2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sub/sub2 */ \"./src/01moduleMethods/src/es6/sub/sub2.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"sub2\", function() { return _sub_sub2__WEBPACK_IMPORTED_MODULE_1__[\"default\"]; });\n\n\r\n\r\n\r\nconsole.log(_sub_sub1__WEBPACK_IMPORTED_MODULE_0__[\"default\"], _sub_sub2__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\r\n\r\n\n\n//# sourceURL=webpack:///./src/01moduleMethods/src/es6/es6modules.js?");
+
+/***/ }),
+
+/***/ "./src/01moduleMethods/src/es6/sub/sub1.js":
+/*!*************************************************!*\
+  !*** ./src/01moduleMethods/src/es6/sub/sub1.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ('sub1');\n\n//# sourceURL=webpack:///./src/01moduleMethods/src/es6/sub/sub1.js?");
+
+/***/ }),
+
+/***/ "./src/01moduleMethods/src/es6/sub/sub2.js":
+/*!*************************************************!*\
+  !*** ./src/01moduleMethods/src/es6/sub/sub2.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ('sub2');\n\n//# sourceURL=webpack:///./src/01moduleMethods/src/es6/sub/sub2.js?");
 
 /***/ })
 
