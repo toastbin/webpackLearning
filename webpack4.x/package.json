@@ -10,6 +10,7 @@
     "webpack-cli": "^3.3.9"
   },
   "scripts": {
-    "bundle01": "npx webpack --config ./src/01moduleMethods/webpack.config.js"
+    "bundle01": "npx webpack --config ./src/01moduleMethods/webpack.config.js",
+    "bundle02": "npx webpack --config ./src/02loaders/webpack.config.js"
   }
 }
