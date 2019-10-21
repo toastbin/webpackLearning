@@ -81,20 +81,20 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/02loaders/src/fileLoader/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/02loaders/src/urlLoader/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/02loaders/src/fileLoader/index.js":
-/*!***********************************************!*\
-  !*** ./src/02loaders/src/fileLoader/index.js ***!
-  \***********************************************/
+/***/ "./src/02loaders/src/urlLoader/index.js":
+/*!**********************************************!*\
+  !*** ./src/02loaders/src/urlLoader/index.js ***!
+  \**********************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _static_imgs_pic_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../static/imgs/pic.jpg */ \"./src/02loaders/static/imgs/pic.jpg\");\n/* harmony import */ var _static_imgs_pic_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_static_imgs_pic_jpg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _static_imgs_small_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../static/imgs/small.png */ \"./src/02loaders/static/imgs/small.png\");\n/* harmony import */ var _static_imgs_small_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_static_imgs_small_png__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\r\n\r\n\r\nconsole.log(_static_imgs_pic_jpg__WEBPACK_IMPORTED_MODULE_0___default.a, _static_imgs_small_png__WEBPACK_IMPORTED_MODULE_1___default.a);\n\n//# sourceURL=webpack:///./src/02loaders/src/fileLoader/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _static_imgs_pic_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../static/imgs/pic.jpg */ \"./src/02loaders/static/imgs/pic.jpg\");\n/* harmony import */ var _static_imgs_pic_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_static_imgs_pic_jpg__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _static_imgs_small_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../static/imgs/small.png */ \"./src/02loaders/static/imgs/small.png\");\n/* harmony import */ var _static_imgs_small_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_static_imgs_small_png__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\r\n\r\n\r\nconsole.log(_static_imgs_pic_jpg__WEBPACK_IMPORTED_MODULE_0___default.a, _static_imgs_small_png__WEBPACK_IMPORTED_MODULE_1___default.a);\r\nconst img = new Image()\r\nimg.src = _static_imgs_small_png__WEBPACK_IMPORTED_MODULE_1___default.a\r\ndocument.querySelector('body').append(img)\n\n//# sourceURL=webpack:///./src/02loaders/src/urlLoader/index.js?");
 
 /***/ }),
 

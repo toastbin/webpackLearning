@@ -1,0 +1,14 @@
+.cssroot {
+  width: 200px;
+  height: 200px;
+  background: skyblue;
+  transform: rotate(60deg);
+}
+.cssroot::after {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  width: 100%;
+  height: 100%;
+  content: 'css'
+}
