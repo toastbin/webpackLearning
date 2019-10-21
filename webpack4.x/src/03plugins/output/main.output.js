@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('hello world');\r\n\r\nconst root = document.querySelector('#root')\r\nroot.innerHTML = '<p>hello world</p>'\n\n//# sourceURL=webpack:///./index.js?");
+eval("console.log('hello world');\r\n\r\nconst root = document.querySelector('#root')\r\nroot.innerHTML = '<p>hello world</p>'//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9pbmRleC5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2luZGV4LmpzPzQxZjUiXSwic291cmNlc0NvbnRlbnQiOlsiY29uc29sZS5sb2coJ2hlbGxvIHdvcmxkJyk7XHJcblxyXG5jb25zdCByb290ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignI3Jvb3QnKVxyXG5yb290LmlubmVySFRNTCA9ICc8cD5oZWxsbyB3b3JsZDwvcD4nIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./index.js\n");
 
 /***/ })
 

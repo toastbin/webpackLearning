@@ -4,6 +4,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   mode: 'development',
+  // sourceMap 是一个映射关系, 源文件和打包后的文件的映射关系
+  // https://webpack.js.org/configuration/devtool/
+  devtool: 'cheap-module-eval-source-map',
+  // production
+  // devtool: 'cheap-module-source-map'
   context: path.resolve(__dirname, './'),
   entry: './index.js',
   output: {
