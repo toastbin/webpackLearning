@@ -3,7 +3,7 @@
 # dependencies
 /webpack4.x/node_modules
 
-
+output/
 
 # misc
 .DS_Store
