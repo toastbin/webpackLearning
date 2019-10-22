@@ -1,7 +1,5 @@
 const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const webpack = require('webpack')
 
 // yarn add @babel/preset-react
 // 解析 jsx 语法
