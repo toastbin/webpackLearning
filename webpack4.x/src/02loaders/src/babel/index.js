@@ -1,5 +1,3 @@
-import '@babel/polyfill'
-
 const hello = () => 'hello world'
 
 new Promise(() => {

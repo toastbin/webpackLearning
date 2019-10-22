@@ -67,14 +67,22 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: [['@babel/preset-env', {
-            targets: {
-              edge: "17",
-              firefox: "60",
-              chrome: "67",
-              safari: "11.1",
-            },
-            useBuiltIns: "usage",
+          // presets: [['@babel/preset-env', {
+          //   targets: {
+          //     edge: "17",
+          //     firefox: "60",
+          //     chrome: "67",
+          //     safari: "11.1",
+          //   },
+          //   useBuiltIns: "usage",
+          // }]]
+
+          // 避免污染全局环境, 不使用 import 引入 polyfill
+          'plugins': [['@babel/plugin-transform-runtime', {
+            'corejs': 2,
+            'helpers': true,
+            'regenerator': true,
+            'useESModules': false
           }]]
         }
       }
