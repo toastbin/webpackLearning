@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
   mode: 'development',
@@ -15,6 +16,18 @@ module.exports = {
     filename: '[name].output.js',
     path: path.resolve(__dirname, './output')
   },
+  devServer: {
+    contentBase: './index.js',
+    open: true,
+    proxy: {
+      // 代理
+      '/api': 'http://localhost:3000'
+    },
+    port: 8088,
+    // 开启热更新
+    hot: true,
+    hotOnly: true
+  },
   // 可以在 webpack 运行到某一个时刻时帮你做一些事情
   plugins: [
     // 自动生成一个 html 文件, 并把打包生成的js自动引入到这个html文件中
@@ -23,6 +36,8 @@ module.exports = {
       template: './index.html'
     }),
     // 下次打包时, 清理之前打包生成的文件
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    // 热更新
+    new webpack.HotModuleReplacementPlugin()
   ]
 }

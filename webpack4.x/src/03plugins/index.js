@@ -1,4 +1,8 @@
-console.log('hello world');
+const arr = [
+  new Promise(() => {}),
+  new Promise(() => {})
+]
 
-const root = document.querySelector('#root')
-root.innerHTML = '<p>hello world</p>'
+arr.map(item => {
+  console.log(item);
+})
